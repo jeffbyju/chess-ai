@@ -19,8 +19,10 @@ Ensure you have **C++17**, **CMake**, **Qt5**, and **LibTorch** installed.
 On **macOS (Homebrew)**:  
 ```sh
 brew install cmake qt@5
+```
 
 ## Clone and Build the project
+```sh
 git clone https://github.com/jeffbyju/chess-ai.git
 cd chess-ai
 mkdir build && cd build
@@ -28,10 +30,12 @@ cmake -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_PREFIX_PATH=/path/to/libtorch \
       -DQt5_DIR=/path/to/qt5/cmake ..
 make
-
+```
 ## Run the project
 
+```sh
 ./ChessDQNQt
+```
 
 ![Game start](docs/game_start.png)
 ![AI checkmate attemp](docs/ai_checkmate_attempt.png)
